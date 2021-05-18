@@ -1,0 +1,29 @@
+<p>claims-list works!</p>
+<h2> Registered claims list</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Name</th>
+            <th> DOB </th>
+            <th> Dateofadmission</th>
+            <th> Dateofdischarge</th>
+            <th> Providername</th>
+            <th> Totalbillamount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let submitclaims of submitclaimss" >
+            <td> {{ submitclaims.name }} </td>
+            <td> {{ submitclaims.dob }} </td>
+            <td> {{ submitclaims.dateofadmission }} </td>
+            <td> {{ submitclaims.dateofdischarge }} </td>
+            <td> {{ submitclaims.providername }} </td>
+            <td> {{ submitclaims.totalbillamount }} </td>
+            <td>
+               <!---- <button (click) = "updateEmployee(employee.id)" class = "btn btn-info"> Update</button>!-->
+             <!-- <button (click) = "deleteEmployee(employee.id)" class = "btn btn-danger" style="margin-left: 5px"> Delete</button>!-->
+               <!---- <button (click) = "employeeDetails(employee.id)" class = "btn btn-info" style="margin-left: 10px"> View</button> -->
+            </td>
+        </tr>
+    </tbody>
+</table>

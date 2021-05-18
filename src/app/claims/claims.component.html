@@ -1,0 +1,41 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Submit claims </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Enter Username" class ="form-control" id = "name"
+                [(ngModel)] = "submitclaims.name" name = "name">
+        </div>
+    
+        <div class="form-group">
+            <label>DOB</label>
+            <input type="date" placeholder="Enter dob" class ="form-control" id = "dob"
+                [(ngModel)] = "submitclaims.dob" name = "dob">
+        </div>
+        <div class="form-group">
+            <label>Dateofadmission</label>
+            <input type="date" placeholder="Enter Dateofadmission" class ="form-control" id = "dateofadmission"
+                [(ngModel)] = "submitclaims.dateofadmission" name = "dateofadmission">
+        </div>
+        <div class="form-group">
+            <label>Dateofdischarge</label>
+            <input type="date" placeholder="Enter Dateofdischarge" class ="form-control" id = "dateofdischarge"
+                [(ngModel)] = "submitclaims.dateofdischarge" name = "dateofdischarge">
+        </div>
+
+        <div class="form-group">
+            <label> Providername</label>
+            <input type="text" placeholder="Enter Providername" class ="form-control" id = "providername"
+                [(ngModel)] = "submitclaims.providername" name = "providername">
+        </div>
+        <div class="form-group">
+            <label>Totalbillamount</label>
+            <input type="text"  class ="form-control" id = "totalbillamount"
+                [(ngModel)] = "submitclaims.totalbillamount" name = "totalbillamount" placeholder="Enter totalbillamount">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
